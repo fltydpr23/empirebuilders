@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empire Builders UK | Home Extensions & Renovations, Birmingham</title>
+  <meta name="description" content="Empire Builders UK — 5-star rated home extensions, bespoke kitchens, and luxury bathroom renovations across Sutton Coldfield, Birmingham and the West Midlands. 500+ projects. Call 07767 703323 for a free consultation." />
+  <meta name="keywords" content="home extension Birmingham, single storey extension Sutton Coldfield, kitchen renovation Birmingham, bathroom renovation West Midlands, Empire Builders UK" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <style>
+    /* ══════════════════════════════════════════════════
+       CREATIVE DIRECTION: Maritime Authority Luxury
+       Deep cobalt-navy foundations, crisp royal blue
+       precision, editorial type hierarchy — the trusted
+       authority aesthetic of a premium architectural
+       practice that also happens to convert leads.
+    ══════════════════════════════════════════════════ */
+
+    :root {
+      --blue:         #2563EB;
+      --blue-mid:     #3B82F6;
+      --blue-light:   #60A5FA;
+      --blue-pale:    #DBEAFE;
+      --navy:         #06122A;
+      --navy-2:       #0C1E3E;
+      --navy-3:       #142850;
+      --navy-4:       #1E3A6A;
+      --white:        #FFFFFF;
+      --off-white:    #F0F5FF;
+      --text-on-dark: #E8F0FE;
+      --text-muted:   rgba(232,240,254,0.52);
+      --border:       rgba(37,99,235,0.18);
+      --border-mid:   rgba(37,99,235,0.28);
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'DM Sans', sans-serif;
+      --ease:         cubic-bezier(0.16,1,0.3,1);
+      --ease-io:      cubic-bezier(0.76,0,0.24,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      background: var(--navy);
+      color: var(--text-on-dark);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; height: 100%; object-fit: cover; }
+    a  { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { font-family: var(--font-body); cursor: pointer; }
+
+    /* Subtle noise */
+    body::before {
+      content:''; position:fixed; inset:0; pointer-events:none; z-index:9999;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity:0.025;
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeUp  { from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:none} }
+    @keyframes fadeIn  { from{opacity:0} to{opacity:1} }
+    @keyframes float   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-9px)} }
+    @keyframes slideL  { from{transform:translateX(-100%)} to{transform:translateX(0)} }
+    @keyframes ticker  { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    @keyframes pulseRing { 0%{box-shadow:0 0 0 0 rgba(37,99,235,0.55)} 70%{box-shadow:0 0 0 14px rgba(37,99,235,0)} 100%{box-shadow:0 0 0 0 rgba(37,99,235,0)} }
+
+    .reveal {
+      opacity:0; transform:translateY(44px);
+      transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
+    }
+    .reveal.visible { opacity:1; transform:none; }
+
+    /* ── Layout ── */
+    .container { max-width:1200px; margin:0 auto; padding:0 48px; }
+    section { position:relative; overflow:hidden; }
+
+    .eyebrow {
+      display:flex; align-items:center; gap:14px; margin-bottom:20px;
+    }
+    .eyebrow::before {
+      content:''; display:block; width:36px; height:1.5px;
+      background:var(--blue-light); flex-shrink:0;
+    }
+    .eyebrow span {
+      font-size:0.6rem; font-weight:600; letter-spacing:0.3em;
+      text-transform:uppercase; color:var(--blue-light);
+    }
+    .eyebrow.dark::before { background:var(--blue); }
+    .eyebrow.dark span   { color:var(--blue); }
+
+    .section-title {
+      font-family:var(--font-display);
+      font-size:clamp(2.2rem,4vw,3.8rem);
+      font-weight:400; line-height:1.1; color:var(--text-on-dark);
+    }
+    .section-title em  { font-style:italic; color:var(--blue-light); }
+    .section-title.dk  { color:var(--navy); }
+    .section-title.dk em { color:var(--blue); }
+
+    /* ── Buttons ── */
+    .btn {
+      display:inline-flex; align-items:center; gap:10px;
+      font-family:var(--font-body); font-size:0.68rem; font-weight:600;
+      letter-spacing:0.18em; text-transform:uppercase;
+      border:none; cursor:pointer; position:relative; overflow:hidden;
+      transition:transform 0.3s var(--ease), box-shadow 0.3s;
+    }
+    .btn::before {
+      content:''; position:absolute; inset:0;
+      background:linear-gradient(135deg,rgba(255,255,255,0.14),transparent 55%);
+      opacity:0; transition:opacity 0.3s;
+    }
+    .btn:hover { transform:translateY(-2px); }
+    .btn:hover::before { opacity:1; }
+
+    .btn-primary {
+      background:var(--blue); color:#fff; padding:17px 38px;
+      clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));
+    }
+    .btn-primary:hover { box-shadow:0 18px 44px rgba(37,99,235,0.42); }
+
+    .btn-outline {
+      background:transparent; color:var(--blue-light); padding:15px 32px;
+      border:1.5px solid rgba(96,165,250,0.4);
+    }
+    .btn-outline:hover { background:rgba(37,99,235,0.14); border-color:var(--blue-light); color:#fff; }
+
+    .btn-ghost {
+      background:transparent; color:var(--text-on-dark);
+      padding:0; font-size:0.7rem; font-weight:400;
+      letter-spacing:0.12em; border:none;
+    }
+    .btn-ghost svg { transition:transform 0.3s var(--ease); }
+    .btn-ghost:hover { color:var(--blue-light); }
+    .btn-ghost:hover svg { transform:translateX(5px); }
+    .btn-ghost:hover { transform:none; }
+
+    /* ══════════════════════════════════════════════════
+       STICKY FLOATING CTA
+    ══════════════════════════════════════════════════ */
+    #sticky-cta {
+      position:fixed; bottom:28px; right:28px; z-index:150;
+      display:flex; flex-direction:column; align-items:flex-end; gap:10px;
+      opacity:0; pointer-events:none;
+      transition:opacity 0.4s;
+    }
+    #sticky-cta.show { opacity:1; pointer-events:all; }
+    .sticky-cta-pill {
+      background:var(--navy-2); border:1px solid var(--border-mid);
+      color:var(--text-on-dark); padding:8px 16px;
+      font-size:0.65rem; font-weight:500; letter-spacing:0.05em;
+      display:flex; align-items:center; gap:8px;
+      backdrop-filter:blur(12px);
+    }
+    .sticky-cta-pill strong { color:var(--blue-light); }
+    .sticky-wa {
+      width:58px; height:58px; border-radius:50%;
+      background:#25D366; display:flex; align-items:center; justify-content:center;
+      color:#fff; box-shadow:0 8px 28px rgba(37,210,102,0.4);
+      animation:pulseRing 2.5s ease-in-out infinite;
+    }
+    .sticky-wa:hover { transform:scale(1.08) !important; }
+
+    /* ══════════════════════════════════════════════════
+       NAV
+    ══════════════════════════════════════════════════ */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:100;
+      padding:24px 48px;
+      display:flex; align-items:center; justify-content:space-between;
+      transition:background 0.4s, padding 0.4s, box-shadow 0.4s;
+    }
+    nav.scrolled {
+      background:rgba(6,18,42,0.96);
+      backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+      padding:14px 48px;
+      box-shadow:0 1px 0 rgba(37,99,235,0.22);
+    }
+    .nav-logo { display:flex; align-items:center; gap:13px; }
+    .nav-logo-mark {
+      width:38px; height:38px; background:var(--blue);
+      display:flex; align-items:center; justify-content:center;
+      font-family:var(--font-display); font-size:1.05rem; font-weight:700; color:#fff;
+      clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));
+      flex-shrink:0;
+    }
+    .nav-logo-name {
+      font-family:var(--font-display); font-size:1rem; font-weight:600;
+      letter-spacing:0.03em; line-height:1.2; color:var(--text-on-dark);
+    }
+    .nav-logo-sub {
+      font-size:0.54rem; font-weight:400; letter-spacing:0.22em;
+      color:var(--blue-light); text-transform:uppercase;
+    }
+    .nav-links { display:flex; align-items:center; gap:32px; }
+    .nav-links a {
+      font-size:0.66rem; font-weight:500; letter-spacing:0.18em;
+      text-transform:uppercase; color:rgba(232,240,254,0.65);
+      position:relative; transition:color 0.3s;
+    }
+    .nav-links a::after {
+      content:''; position:absolute; bottom:-4px; left:0;
+      width:0; height:1.5px; background:var(--blue);
+      transition:width 0.3s var(--ease);
+    }
+    .nav-links a:hover { color:var(--text-on-dark); }
+    .nav-links a:hover::after { width:100%; }
+    .nav-cta-link {
+      background:var(--blue); color:#fff !important;
+      padding:10px 20px; font-size:0.6rem !important; font-weight:600 !important;
+      transition:background 0.3s, box-shadow 0.3s !important;
+    }
+    .nav-cta-link::after { display:none !important; }
+    .nav-cta-link:hover { background:var(--blue-mid) !important; box-shadow:0 6px 20px rgba(37,99,235,0.4) !important; }
+
+    .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; padding:4px; }
+    .hamburger span { display:block; width:22px; height:1.5px; background:var(--text-on-dark); transition:all 0.3s; }
+
+    .mobile-menu {
+      display:none; position:fixed; inset:0; background:var(--navy); z-index:99;
+      flex-direction:column; align-items:center; justify-content:center; gap:32px;
+      opacity:0; transition:opacity 0.3s;
+    }
+    .mobile-menu.open { opacity:1; }
+    .mobile-menu a {
+      font-family:var(--font-display); font-size:2rem; font-weight:400;
+      color:var(--text-on-dark); letter-spacing:0.04em; transition:color 0.3s;
+    }
+    .mobile-menu a:hover { color:var(--blue-light); }
+    .mobile-close {
+      position:absolute; top:22px; right:36px;
+      background:none; border:none; color:var(--text-on-dark); font-size:1.6rem;
+    }
+
+    /* ══════════════════════════════════════════════════
+       HERO
+    ══════════════════════════════════════════════════ */
+    #hero {
+      min-height:100vh; display:grid; grid-template-columns:1fr 1fr;
+      align-items:end; background:var(--navy); overflow:hidden;
+    }
+    .hero-mesh {
+      position:absolute; inset:0;
+      background:
+        radial-gradient(ellipse 75% 80% at 72% 22%, rgba(37,99,235,0.24) 0%, transparent 58%),
+        radial-gradient(ellipse 45% 55% at 10% 75%, rgba(29,78,216,0.15) 0%, transparent 52%),
+        radial-gradient(ellipse 35% 45% at 90% 85%, rgba(96,165,250,0.07) 0%, transparent 50%),
+        var(--navy);
+    }
+    .hero-grid {
+      position:absolute; inset:0;
+      background-image:
+        linear-gradient(rgba(37,99,235,0.065) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37,99,235,0.065) 1px, transparent 1px);
+      background-size:70px 70px;
+      mask-image:linear-gradient(130deg, transparent 10%, black 40%, transparent 88%);
+    }
+    .hero-accent {
+      position:absolute; top:0; right:38%; width:1.5px; height:42vh;
+      background:linear-gradient(to bottom, transparent, var(--blue-light), transparent);
+      opacity:0.3; transform:skewX(-3deg);
+    }
+    .hero-deco {
+      position:absolute; right:-40px; top:50%; transform:translateY(-52%);
+      font-family:var(--font-display); font-size:clamp(260px,30vw,460px);
+      font-weight:700; color:transparent;
+      -webkit-text-stroke:1.5px rgba(37,99,235,0.08); line-height:1;
+      user-select:none; pointer-events:none;
+    }
+
+    .hero-left {
+      position:relative; z-index:2;
+      padding:160px 0 100px 48px;
+      animation:fadeUp 1.1s var(--ease) both;
+    }
+    .hero-eyebrow {
+      display:flex; align-items:center; gap:14px; margin-bottom:36px;
+      animation:fadeUp 1s var(--ease) 0.15s both;
+    }
+    .hero-eyebrow-line { width:44px; height:1.5px; background:var(--blue-light); }
+    .hero-eyebrow-text {
+      font-size:0.6rem; font-weight:600; letter-spacing:0.3em;
+      text-transform:uppercase; color:var(--blue-light);
+    }
+    .hero-headline {
+      font-family:var(--font-display);
+      font-size:clamp(2.9rem,6vw,5.6rem); font-weight:400;
+      line-height:1.06; color:var(--text-on-dark); margin-bottom:28px;
+      animation:fadeUp 1s var(--ease) 0.3s both;
+    }
+    .hero-headline em { font-style:italic; color:var(--blue-light); }
+    .hero-sub {
+      font-size:1rem; font-weight:300; line-height:1.82;
+      color:var(--text-muted); max-width:460px; margin-bottom:52px;
+      animation:fadeUp 1s var(--ease) 0.45s both;
+    }
+    .hero-actions {
+      display:flex; align-items:center; gap:24px; flex-wrap:wrap;
+      animation:fadeUp 1s var(--ease) 0.6s both;
+    }
+
+    /* Right panel */
+    .hero-right {
+      position:relative; z-index:2; height:100vh;
+      display:flex; flex-direction:column; justify-content:flex-end;
+      animation:fadeIn 1.2s var(--ease) 0.3s both;
+    }
+    .hero-visual {
+      position:absolute; inset:0; overflow:hidden;
+    }
+    .hero-visual-inner {
+      width:100%; height:100%;
+      background:
+        linear-gradient(180deg, rgba(6,18,42,0.25) 0%, rgba(6,18,42,0.82) 100%),
+        linear-gradient(135deg, rgba(37,99,235,0.18) 0%, transparent 50%),
+        url('2025-07-12.jpg') center/cover no-repeat;
+    }
+    .hero-stats-panel {
+      position:absolute; bottom:0; left:0; right:0;
+      display:flex; z-index:3;
+      animation:fadeIn 1.3s var(--ease) 0.9s both;
+    }
+    .hero-stat {
+      flex:1; padding:26px 20px; text-align:center;
+      border-top:1px solid var(--border-mid); border-right:1px solid var(--border);
+      background:rgba(6,18,42,0.78); backdrop-filter:blur(10px);
+    }
+    .hero-stat:last-child { border-right:none; }
+    .hero-stat-num {
+      font-family:var(--font-display); font-size:1.9rem; font-weight:600;
+      color:var(--blue-light); line-height:1;
+    }
+    .hero-stat-label {
+      font-size:0.5rem; font-weight:500; letter-spacing:0.2em;
+      text-transform:uppercase; color:var(--text-muted); margin-top:5px;
+    }
+    .hero-badge {
+      position:absolute; top:120px; left:-22px; width:100px; height:100px;
+      border-radius:50%; border:1px solid var(--border-mid);
+      background:rgba(6,18,42,0.7); backdrop-filter:blur(8px);
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      text-align:center; z-index:4; animation:float 6s ease-in-out infinite;
+    }
+    .hero-badge-num {
+      font-family:var(--font-display); font-size:1.5rem; font-weight:600;
+      color:var(--blue-light); line-height:1;
+    }
+    .hero-badge-label {
+      font-size:0.42rem; letter-spacing:0.12em; text-transform:uppercase;
+      color:var(--text-muted); margin-top:3px; line-height:1.4;
+    }
+    .hero-scroll {
+      position:absolute; bottom:44px; left:48px; z-index:3;
+      display:flex; align-items:center; gap:12px; opacity:0.4;
+      animation:fadeIn 1.2s var(--ease) 1.3s both;
+    }
+    .hero-scroll-line { width:44px; height:1px; background:var(--blue-light); }
+    .hero-scroll-text {
+      font-size:0.52rem; letter-spacing:0.28em;
+      text-transform:uppercase; color:var(--blue-light);
+    }
+
+    /* ══════════════════════════════════════════════════
+       TRUST BAR
+    ══════════════════════════════════════════════════ */
+    #trust-bar {
+      background:var(--navy-2); border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+      padding:0;
+    }
+    .trust-bar-inner {
+      display:flex; align-items:stretch; overflow:hidden;
+    }
+    .trust-item {
+      flex:1; display:flex; align-items:center; justify-content:center; gap:12px;
+      padding:22px 16px; border-right:1px solid var(--border);
+      text-align:center;
+    }
+    .trust-item:last-child { border-right:none; }
+    .trust-item-icon { color:var(--blue-light); flex-shrink:0; }
+    .trust-item-label {
+      font-size:0.72rem; font-weight:400; color:var(--text-on-dark); line-height:1.3;
+    }
+    .trust-item-label strong { display:block; font-size:0.85rem; font-weight:600; color:var(--blue-light); }
+    .trust-stars { display:flex; gap:2px; }
+    .trust-stars span { color:#FFC107; font-size:0.9rem; }
+
+    /* Ticker */
+    .ticker-outer {
+      background:var(--blue); overflow:hidden; padding:10px 0;
+    }
+    .ticker-track {
+      display:flex; gap:0; width:max-content;
+      animation:ticker 30s linear infinite;
+    }
+    .ticker-item {
+      display:flex; align-items:center; gap:12px; padding:0 40px;
+      font-size:0.65rem; font-weight:500; letter-spacing:0.15em;
+      text-transform:uppercase; color:rgba(255,255,255,0.85); white-space:nowrap;
+    }
+    .ticker-dot { width:4px; height:4px; border-radius:50%; background:rgba(255,255,255,0.5); flex-shrink:0; }
+
+    /* ══════════════════════════════════════════════════
+       ABOUT
+    ══════════════════════════════════════════════════ */
+    #about { background:var(--white); padding:140px 0 170px; }
+    .about-inner { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+    .about-desc {
+      font-size:0.98rem; font-weight:300; line-height:1.9;
+      color:#4A5568; max-width:480px; margin-top:26px;
+    }
+    .about-pillars {
+      display:grid; grid-template-columns:repeat(3,1fr); gap:0;
+      margin-top:48px; border-top:1px solid rgba(37,99,235,0.12); padding-top:28px;
+    }
+    .about-pillar { padding:0 20px 0 0; border-right:1px solid rgba(37,99,235,0.12); }
+    .about-pillar:last-child { border-right:none; padding-right:0; padding-left:20px; }
+    .about-pillar:first-child { padding-left:0; }
+    .about-pillar-num {
+      font-family:var(--font-display); font-size:2.4rem; font-weight:700; color:var(--blue); line-height:1;
+    }
+    .about-pillar-label { font-size:0.72rem; color:#64748B; margin-top:5px; line-height:1.4; }
+
+    .about-cta-strip {
+      margin-top:40px; padding:24px 28px;
+      background:var(--off-white); border-left:3px solid var(--blue);
+      display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+    }
+    .about-cta-strip p { font-size:0.88rem; font-weight:400; color:var(--navy-2); flex:1; line-height:1.5; }
+    .about-cta-strip p strong { color:var(--blue); }
+
+    .about-right { position:relative; }
+    .about-img-frame {
+      width:100%; aspect-ratio:4/5; overflow:hidden; position:relative;
+    }
+    .about-img-frame img { width:100%; height:100%; object-fit:cover; }
+    .about-img-frame::after {
+      content:''; position:absolute; bottom:-20px; right:-20px;
+      width:72%; height:70%; border:1.5px solid rgba(37,99,235,0.35); pointer-events:none;
+    }
+    .about-pull {
+      position:absolute; bottom:-50px; left:-40px;
+      background:var(--blue); color:#fff; padding:30px 34px; width:290px; z-index:2;
+      clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));
+    }
+    .about-pull-quote {
+      font-family:var(--font-display); font-size:1rem; font-weight:400;
+      font-style:italic; line-height:1.6;
+    }
+    .about-pull-cite {
+      font-size:0.52rem; letter-spacing:0.22em; text-transform:uppercase;
+      color:rgba(255,255,255,0.6); margin-top:12px;
+    }
+
+    /* ══════════════════════════════════════════════════
+       PROJECTS GALLERY
+    ══════════════════════════════════════════════════ */
+    #projects {
+      background:var(--navy-2); padding:140px 0;
+    }
+    .projects-header {
+      display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:end; margin-bottom:72px;
+    }
+    .projects-intro {
+      font-size:0.95rem; font-weight:300; line-height:1.85; color:var(--text-muted); align-self:end;
+    }
+
+    /* Asymmetric masonry-style grid */
+    .projects-grid {
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      grid-template-rows:auto;
+      gap:10px;
+    }
+    .proj-card {
+      position:relative; overflow:hidden; cursor:pointer;
+      background:var(--navy-3);
+    }
+    .proj-card::after {
+      content:''; position:absolute; inset:0;
+      background:linear-gradient(180deg,transparent 40%,rgba(6,18,42,0.88) 100%);
+      transition:opacity 0.4s;
+    }
+    .proj-card:hover::after { opacity:1.0; }
+    .proj-card img {
+      width:100%; height:100%; object-fit:cover;
+      transition:transform 0.7s var(--ease);
+      display:block;
+    }
+    .proj-card:hover img { transform:scale(1.06); }
+    .proj-card-info {
+      position:absolute; bottom:0; left:0; right:0; z-index:2;
+      padding:22px 24px; transform:translateY(100%);
+      transition:transform 0.4s var(--ease);
+    }
+    .proj-card:hover .proj-card-info { transform:translateY(0); }
+    .proj-card-label {
+      font-size:0.6rem; font-weight:600; letter-spacing:0.22em;
+      text-transform:uppercase; color:var(--blue-light); margin-bottom:5px;
+    }
+    .proj-card-title {
+      font-family:var(--font-display); font-size:1.2rem; font-weight:400;
+      color:#fff; line-height:1.2;
+    }
+    .proj-card-zoom {
+      position:absolute; top:16px; right:16px; z-index:2;
+      width:36px; height:36px; border-radius:50%;
+      background:rgba(37,99,235,0.7); backdrop-filter:blur(6px);
+      display:flex; align-items:center; justify-content:center;
+      color:#fff; opacity:0; transition:opacity 0.3s;
+    }
+    .proj-card:hover .proj-card-zoom { opacity:1; }
+
+    /* Grid layout positioning */
+    .proj-card:nth-child(1) { grid-column:1/8;  grid-row:1; min-height:420px; }
+    .proj-card:nth-child(2) { grid-column:8/13; grid-row:1; min-height:420px; }
+    .proj-card:nth-child(3) { grid-column:1/5;  grid-row:2; min-height:340px; }
+    .proj-card:nth-child(4) { grid-column:5/9;  grid-row:2; min-height:340px; }
+    .proj-card:nth-child(5) { grid-column:9/13; grid-row:2; min-height:340px; }
+
+    /* CTA below gallery */
+    .projects-cta {
+      margin-top:48px; display:flex; align-items:center; justify-content:space-between;
+      flex-wrap:wrap; gap:20px; padding:28px 32px;
+      background:rgba(37,99,235,0.07); border:1px solid var(--border-mid);
+    }
+    .projects-cta-text {
+      font-size:0.95rem; font-weight:400; color:var(--text-on-dark);
+    }
+    .projects-cta-text strong { color:var(--blue-light); }
+    .projects-cta-text small { display:block; font-size:0.78rem; color:var(--text-muted); margin-top:3px; }
+
+    /* ── Lightbox ── */
+    #lightbox {
+      display:none; position:fixed; inset:0; z-index:500;
+      background:rgba(3,8,18,0.96); align-items:center; justify-content:center;
+      padding:24px;
+    }
+    #lightbox.open { display:flex; }
+    .lightbox-img-wrap { position:relative; max-width:1000px; width:100%; }
+    #lightbox-img { width:100%; height:auto; max-height:80vh; object-fit:contain; display:block; }
+    .lightbox-caption {
+      text-align:center; margin-top:14px;
+      font-size:0.78rem; color:rgba(232,240,254,0.55);
+    }
+    .lb-close {
+      position:absolute; top:-44px; right:0; background:none; border:none;
+      color:rgba(232,240,254,0.6); font-size:1.5rem; cursor:pointer; transition:color 0.2s;
+    }
+    .lb-close:hover { color:#fff; }
+    .lb-prev, .lb-next {
+      position:absolute; top:50%; transform:translateY(-50%); background:rgba(37,99,235,0.5);
+      border:none; color:#fff; width:44px; height:44px; border-radius:50%;
+      display:flex; align-items:center; justify-content:center; cursor:pointer;
+      transition:background 0.3s;
+    }
+    .lb-prev { left:-56px; }
+    .lb-next { right:-56px; }
+    .lb-prev:hover, .lb-next:hover { background:var(--blue); }
+
+    /* ══════════════════════════════════════════════════
+       SERVICES
+    ══════════════════════════════════════════════════ */
+    #services { background:var(--navy-3); padding:140px 0; }
+    .services-header {
+      display:grid; grid-template-columns:1fr 1fr; gap:60px;
+      align-items:end; margin-bottom:72px;
+    }
+    .services-intro { font-size:0.95rem; font-weight:300; line-height:1.85; color:var(--text-muted); align-self:end; }
+
+    .services-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:2px; }
+    .service-card {
+      background:rgba(255,255,255,0.025); border:1px solid var(--border);
+      padding:50px 44px; position:relative; overflow:hidden; cursor:pointer;
+      transition:background 0.4s, border-color 0.4s;
+    }
+    .service-card::after {
+      content:''; position:absolute; bottom:0; left:0; width:100%; height:3px;
+      background:linear-gradient(90deg,var(--blue),var(--blue-light));
+      transform:scaleX(0); transform-origin:left;
+      transition:transform 0.5s var(--ease);
+    }
+    .service-card:hover { background:rgba(37,99,235,0.07); border-color:var(--border-mid); }
+    .service-card:hover::after { transform:scaleX(1); }
+    .service-num {
+      font-family:var(--font-display); font-size:0.7rem; letter-spacing:0.14em;
+      color:var(--blue-light); opacity:0.55; margin-bottom:24px;
+    }
+    .service-icon { width:42px; height:42px; margin-bottom:18px; color:var(--blue); }
+    .service-title {
+      font-family:var(--font-display); font-size:1.65rem; font-weight:400;
+      color:var(--text-on-dark); margin-bottom:12px; line-height:1.2;
+    }
+    .service-desc {
+      font-size:0.875rem; font-weight:300; line-height:1.85;
+      color:var(--text-muted); margin-bottom:24px;
+    }
+    .service-features { display:flex; flex-direction:column; gap:8px; }
+    .service-feature {
+      display:flex; align-items:center; gap:10px;
+      font-size:0.75rem; color:rgba(232,240,254,0.42);
+    }
+    .service-feature::before {
+      content:''; width:14px; height:1.5px;
+      background:var(--blue); flex-shrink:0;
+    }
+
+    /* ══════════════════════════════════════════════════
+       PROCESS
+    ══════════════════════════════════════════════════ */
+    #process { background:var(--navy); padding:140px 0; }
+    .process-inner { display:grid; grid-template-columns:1fr 2fr; gap:80px; align-items:start; }
+    .process-steps { display:flex; flex-direction:column; position:relative; }
+    .process-steps::before {
+      content:''; position:absolute; left:20px; top:0; bottom:0; width:1px;
+      background:linear-gradient(to bottom, var(--blue), transparent);
+    }
+    .process-step {
+      display:flex; gap:28px; padding:34px 0;
+      border-bottom:1px solid var(--border); position:relative;
+    }
+    .process-step:last-child { border-bottom:none; }
+    .process-step-num {
+      width:40px; height:40px; border-radius:50%;
+      border:1px solid var(--border-mid);
+      display:flex; align-items:center; justify-content:center;
+      font-family:var(--font-display); font-size:0.88rem; color:var(--blue-light);
+      flex-shrink:0; background:var(--navy); position:relative; z-index:1;
+      transition:background 0.3s, border-color 0.3s;
+    }
+    .process-step:hover .process-step-num { background:var(--blue); border-color:var(--blue); color:#fff; }
+    .process-step-title {
+      font-family:var(--font-display); font-size:1.3rem; font-weight:400;
+      color:var(--text-on-dark); margin-bottom:7px;
+    }
+    .process-step-desc { font-size:0.84rem; font-weight:300; line-height:1.75; color:var(--text-muted); }
+
+    /* ══════════════════════════════════════════════════
+       TESTIMONIALS — verified Google reviews
+    ══════════════════════════════════════════════════ */
+    #testimonials { background:var(--white); padding:140px 0; }
+    .testimonials-header { text-align:center; margin-bottom:72px; }
+    .testimonials-header .eyebrow { justify-content:center; }
+
+    /* Google badge row */
+    .google-badge-row {
+      display:flex; align-items:center; justify-content:center; gap:16px;
+      margin-bottom:60px; padding:22px 32px;
+      background:var(--off-white); border:1px solid rgba(37,99,235,0.1);
+      max-width:540px; margin-left:auto; margin-right:auto;
+    }
+    .google-badge-logo { display:flex; align-items:center; gap:8px; }
+    .g-letter {
+      width:36px; height:36px; border-radius:50%;
+      background:linear-gradient(135deg,#4285F4 0%,#EA4335 50%,#FBBC04 75%,#34A853 100%);
+      display:flex; align-items:center; justify-content:center;
+      font-size:1rem; font-weight:700; color:#fff;
+    }
+    .google-badge-info {}
+    .google-badge-rating {
+      display:flex; align-items:center; gap:6px;
+      font-size:1.2rem; font-weight:700; color:var(--navy);
+    }
+    .google-badge-rating .stars { color:#FFC107; font-size:1rem; letter-spacing:1px; }
+    .google-badge-count { font-size:0.72rem; color:#64748B; margin-top:2px; }
+    .google-badge-divider { width:1px; height:40px; background:rgba(37,99,235,0.1); }
+    .google-badge-cta { font-size:0.72rem; color:var(--blue); font-weight:500; }
+
+    .testimonials-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .testimonial-card {
+      background:var(--off-white); border:1px solid rgba(37,99,235,0.08);
+      padding:40px 34px; position:relative;
+      transition:box-shadow 0.4s, transform 0.4s var(--ease);
+    }
+    .testimonial-card:hover {
+      box-shadow:0 18px 52px rgba(37,99,235,0.1); transform:translateY(-4px);
+    }
+    .testimonial-card-top {
+      display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:18px;
+    }
+    .testimonial-stars { color:#FFC107; font-size:0.75rem; letter-spacing:2px; }
+    .testimonial-google-icon {
+      width:20px; height:20px; opacity:0.45; font-size:0.6rem; font-weight:700;
+      color:#4285F4; background:#e8f0fe; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .testimonial-text {
+      font-family:var(--font-display); font-size:0.97rem; font-weight:400;
+      font-style:italic; line-height:1.75; color:var(--navy-2); margin-bottom:26px;
+    }
+    .testimonial-author {
+      display:flex; align-items:center; gap:12px;
+      padding-top:18px; border-top:1px solid rgba(37,99,235,0.09);
+    }
+    .testimonial-avatar {
+      width:38px; height:38px; border-radius:50%;
+      background:linear-gradient(135deg,var(--blue),var(--blue-mid));
+      display:flex; align-items:center; justify-content:center;
+      font-family:var(--font-display); font-size:0.95rem; font-weight:600; color:#fff;
+    }
+    .testimonial-name { font-weight:600; font-size:0.84rem; color:var(--navy-2); }
+    .testimonial-location { font-size:0.68rem; color:#64748B; margin-top:2px; }
+
+    /* Stats row */
+    .stats-row {
+      display:grid; grid-template-columns:repeat(4,1fr); gap:2px; margin-bottom:72px;
+    }
+    .stat-box {
+      background:var(--navy-2); padding:40px 24px; text-align:center;
+    }
+    .stat-box:nth-child(even) { background:var(--navy-3); }
+    .stat-box-num {
+      font-family:var(--font-display); font-size:3rem; font-weight:600;
+      color:var(--blue-light); line-height:1;
+    }
+    .stat-box-label {
+      font-size:0.56rem; font-weight:500; letter-spacing:0.2em;
+      text-transform:uppercase; color:rgba(232,240,254,0.4); margin-top:7px;
+    }
+
+    /* ══════════════════════════════════════════════════
+       URGENCY BAND
+    ══════════════════════════════════════════════════ */
+    #urgency-band {
+      background:var(--blue); padding:40px 0;
+    }
+    .urgency-inner {
+      display:flex; align-items:center; justify-content:space-between;
+      gap:32px; flex-wrap:wrap;
+    }
+    .urgency-text {}
+    .urgency-label {
+      font-size:0.6rem; font-weight:600; letter-spacing:0.28em;
+      text-transform:uppercase; color:rgba(255,255,255,0.65); margin-bottom:6px;
+    }
+    .urgency-headline {
+      font-family:var(--font-display); font-size:1.8rem; font-weight:400; color:#fff; line-height:1.2;
+    }
+    .urgency-headline em { font-style:italic; }
+    .urgency-sub { font-size:0.82rem; color:rgba(255,255,255,0.7); margin-top:6px; }
+    .urgency-slots {
+      display:flex; gap:8px; align-items:center; flex-shrink:0;
+    }
+    .slot-dot {
+      width:10px; height:10px; border-radius:50%;
+    }
+    .slot-taken { background:rgba(255,255,255,0.25); }
+    .slot-available { background:#fff; }
+    .urgency-slot-text { font-size:0.75rem; color:rgba(255,255,255,0.8); margin-left:4px; }
+
+    /* ══════════════════════════════════════════════════
+       CONTACT / FORM
+    ══════════════════════════════════════════════════ */
+    #contact { background:var(--navy-2); padding:140px 0; position:relative; }
+    #contact::before {
+      content:''; position:absolute; inset:0; pointer-events:none;
+      background:radial-gradient(ellipse 75% 50% at 50% 100%, rgba(37,99,235,0.13) 0%, transparent 65%);
+    }
+    .contact-grid-bg {
+      position:absolute; inset:0; pointer-events:none;
+      background-image:
+        linear-gradient(rgba(37,99,235,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37,99,235,0.04) 1px, transparent 1px);
+      background-size:54px 54px;
+    }
+    .contact-inner { position:relative; display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+    .contact-sub { font-size:0.95rem; font-weight:300; line-height:1.85; color:var(--text-muted); margin-bottom:44px; }
+    .contact-details { display:flex; flex-direction:column; gap:20px; }
+    .contact-detail { display:flex; align-items:center; gap:16px; }
+    .contact-detail-icon {
+      width:38px; height:38px; border:1px solid var(--border-mid); border-radius:50%;
+      display:flex; align-items:center; justify-content:center; color:var(--blue-light); flex-shrink:0;
+    }
+    .contact-detail-label {
+      font-size:0.52rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--text-muted);
+    }
+    .contact-detail-value {
+      font-family:var(--font-display); font-size:1.02rem; color:var(--text-on-dark); margin-top:2px;
+    }
+    .contact-detail-value a { transition:color 0.3s; }
+    .contact-detail-value a:hover { color:var(--blue-light); }
+
+    /* Guarantees */
+    .contact-guarantees {
+      margin-top:44px; padding:28px 24px;
+      background:rgba(37,99,235,0.07); border:1px solid var(--border);
+    }
+    .contact-guarantees-title {
+      font-size:0.58rem; font-weight:600; letter-spacing:0.24em;
+      text-transform:uppercase; color:var(--blue-light); margin-bottom:16px;
+    }
+    .guarantee-item {
+      display:flex; align-items:flex-start; gap:10px; margin-bottom:12px;
+    }
+    .guarantee-item:last-child { margin-bottom:0; }
+    .guarantee-icon { color:var(--blue-light); flex-shrink:0; margin-top:1px; }
+    .guarantee-text { font-size:0.82rem; color:var(--text-muted); line-height:1.5; }
+    .guarantee-text strong { color:var(--text-on-dark); }
+
+    /* Form */
+    .contact-form { background:rgba(255,255,255,0.03); border:1px solid var(--border-mid); padding:48px; }
+    .form-title { font-family:var(--font-display); font-size:1.6rem; font-weight:400; color:var(--text-on-dark); margin-bottom:6px; }
+    .form-subtitle { font-size:0.8rem; color:var(--text-muted); margin-bottom:32px; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
+    .form-group { display:flex; flex-direction:column; gap:7px; margin-bottom:14px; }
+    label {
+      font-size:0.6rem; font-weight:600; letter-spacing:0.18em;
+      text-transform:uppercase; color:var(--blue-light);
+    }
+    input, select, textarea {
+      background:rgba(255,255,255,0.04); border:1px solid var(--border);
+      color:var(--text-on-dark); padding:13px 15px;
+      font-family:var(--font-body); font-size:0.9rem; font-weight:300;
+      outline:none; width:100%; border-radius:0; -webkit-appearance:none;
+      transition:border-color 0.3s, background 0.3s;
+    }
+    input::placeholder, textarea::placeholder { color:rgba(232,240,254,0.26); }
+    input:focus, select:focus, textarea:focus {
+      border-color:var(--blue); background:rgba(37,99,235,0.07);
+    }
+    select option { background:var(--navy-2); color:var(--text-on-dark); }
+    textarea { resize:vertical; min-height:110px; }
+    .form-consent {
+      display:flex; align-items:flex-start; gap:11px; margin-bottom:22px;
+      font-size:0.74rem; color:var(--text-muted); line-height:1.6;
+    }
+    .form-consent input[type="checkbox"] {
+      width:15px; height:15px; flex-shrink:0; margin-top:2px; accent-color:var(--blue);
+    }
+    .form-consent a { color:var(--blue-light); text-decoration:underline; }
+    .form-submit { width:100%; justify-content:center; margin-top:4px; font-size:0.7rem; }
+    .form-wa-note {
+      display:flex; align-items:center; gap:8px; margin-top:12px;
+      font-size:0.7rem; color:var(--text-muted);
+    }
+    .wa-green { color:#25D366; }
+
+    /* ══════════════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════════════ */
+    footer { background:var(--navy); padding:80px 0 44px; border-top:1px solid var(--border); }
+    .footer-inner { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:52px; margin-bottom:60px; }
+    .footer-brand-name { font-family:var(--font-display); font-size:1.25rem; font-weight:600; color:var(--text-on-dark); margin-bottom:4px; }
+    .footer-brand-tag { font-size:0.58rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--blue-light); margin-bottom:16px; }
+    .footer-brand-desc { font-size:0.82rem; font-weight:300; line-height:1.8; color:rgba(232,240,254,0.3); max-width:265px; }
+    .footer-social { display:flex; gap:10px; margin-top:20px; }
+    .footer-social-icon {
+      width:33px; height:33px; border:1px solid var(--border); display:flex;
+      align-items:center; justify-content:center; color:rgba(232,240,254,0.35);
+      transition:border-color 0.3s, color 0.3s;
+    }
+    .footer-social-icon:hover { border-color:var(--blue-light); color:var(--blue-light); }
+    .footer-col-title { font-size:0.58rem; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:var(--blue-light); margin-bottom:20px; }
+    .footer-links { display:flex; flex-direction:column; gap:11px; }
+    .footer-links a { font-size:0.82rem; font-weight:300; color:rgba(232,240,254,0.36); transition:color 0.3s; }
+    .footer-links a:hover { color:var(--text-on-dark); }
+    .footer-bottom {
+      padding-top:26px; border-top:1px solid rgba(255,255,255,0.04);
+      display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px;
+    }
+    .footer-copy { font-size:0.66rem; font-weight:300; color:rgba(232,240,254,0.2); }
+    .footer-legal { display:flex; gap:20px; }
+    .footer-legal a { font-size:0.66rem; color:rgba(232,240,254,0.2); cursor:pointer; transition:color 0.3s; }
+    .footer-legal a:hover { color:rgba(232,240,254,0.55); }
+
+    /* ══════════════════════════════════════════════════
+       COOKIE BANNER
+    ══════════════════════════════════════════════════ */
+    #cookie-banner {
+      position:fixed; bottom:0; left:0; right:0;
+      background:rgba(6,18,42,0.97); border-top:1px solid var(--border-mid);
+      padding:22px 48px; z-index:200;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:24px; flex-wrap:wrap; backdrop-filter:blur(18px);
+      transform:translateY(100%); transition:transform 0.5s var(--ease);
+    }
+    #cookie-banner.show { transform:translateY(0); }
+    .cookie-text { font-size:0.8rem; font-weight:300; line-height:1.65; color:rgba(232,240,254,0.6); max-width:620px; }
+    .cookie-text a { color:var(--blue-light); text-decoration:underline; cursor:pointer; }
+    .cookie-actions { display:flex; gap:10px; flex-shrink:0; }
+    .cookie-btn { padding:10px 22px; font-family:var(--font-body); font-size:0.62rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; border:none; transition:all 0.3s; }
+    .cookie-btn-accept { background:var(--blue); color:#fff; }
+    .cookie-btn-accept:hover { background:var(--blue-mid); }
+    .cookie-btn-reject { background:transparent; color:rgba(232,240,254,0.4); border:1px solid rgba(232,240,254,0.14); }
+    .cookie-btn-reject:hover { border-color:rgba(232,240,254,0.4); color:var(--text-on-dark); }
+
+    /* ══════════════════════════════════════════════════
+       MODAL
+    ══════════════════════════════════════════════════ */
+    .modal-overlay {
+      position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:300;
+      display:flex; align-items:center; justify-content:center;
+      opacity:0; pointer-events:none; transition:opacity 0.3s; padding:24px;
+    }
+    .modal-overlay.open { opacity:1; pointer-events:all; }
+    .modal {
+      background:var(--navy-2); border:1px solid var(--border-mid);
+      max-width:740px; width:100%; max-height:88vh; overflow-y:auto;
+      padding:52px; position:relative;
+    }
+    .modal-close {
+      position:absolute; top:20px; right:20px; background:none; border:none;
+      color:rgba(232,240,254,0.4); font-size:1.3rem; cursor:pointer; transition:color 0.3s;
+    }
+    .modal-close:hover { color:var(--text-on-dark); }
+    .modal h2 { font-family:var(--font-display); font-size:1.9rem; font-weight:400; color:var(--text-on-dark); margin-bottom:7px; }
+    .modal-date { font-size:0.6rem; letter-spacing:0.15em; color:var(--blue-light); text-transform:uppercase; margin-bottom:28px; }
+    .modal h3 { font-family:var(--font-display); font-size:1.05rem; color:var(--text-on-dark); margin:24px 0 8px; }
+    .modal p, .modal li { font-size:0.84rem; font-weight:300; line-height:1.85; color:rgba(232,240,254,0.55); }
+    .modal ul { padding-left:18px; }
+    .modal li { margin-bottom:5px; }
+    .modal a { color:var(--blue-light); }
+    .modal strong { color:var(--text-on-dark); }
+
+    /* ══════════════════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════════════════ */
+    @media (max-width:1024px) {
+      #hero                  { grid-template-columns:1fr; }
+      .hero-right            { display:none; }
+      .hero-left             { padding:140px 48px 100px; }
+      .hero-scroll           { left:48px; }
+      .about-inner           { grid-template-columns:1fr; gap:100px; }
+      .about-pull            { left:0; bottom:-48px; }
+      .projects-header       { grid-template-columns:1fr; }
+      .proj-card:nth-child(1){ grid-column:1/7; }
+      .proj-card:nth-child(2){ grid-column:7/13; }
+      .proj-card:nth-child(3){ grid-column:1/5; }
+      .proj-card:nth-child(4){ grid-column:5/9; }
+      .proj-card:nth-child(5){ grid-column:9/13; }
+      .services-header       { grid-template-columns:1fr; }
+      .process-inner         { grid-template-columns:1fr; }
+      .testimonials-grid     { grid-template-columns:1fr 1fr; }
+      .contact-inner         { grid-template-columns:1fr; gap:56px; }
+      .footer-inner          { grid-template-columns:1fr 1fr; }
+      .stats-row             { grid-template-columns:repeat(2,1fr); }
+    }
+    @media (max-width:768px) {
+      nav                    { padding:18px 24px; }
+      nav.scrolled           { padding:13px 24px; }
+      .nav-links             { display:none; }
+      .hamburger             { display:flex; }
+      .mobile-menu           { display:flex; }
+      .container             { padding:0 24px; }
+      .hero-left             { padding:120px 24px 80px; }
+      .hero-scroll           { left:24px; }
+      .services-grid         { grid-template-columns:1fr; }
+      .testimonials-grid     { grid-template-columns:1fr; }
+      #about,#services,#process,#testimonials,#contact,#projects { padding:100px 0; }
+      .footer-inner          { grid-template-columns:1fr; }
+      .footer-bottom         { flex-direction:column; text-align:center; }
+      #cookie-banner         { padding:18px 24px; }
+      .form-row              { grid-template-columns:1fr; }
+      .contact-form          { padding:32px 22px; }
+      .projects-grid         { grid-template-columns:1fr 1fr; grid-template-rows:auto; }
+      .proj-card             { grid-column:auto !important; grid-row:auto !important; min-height:240px !important; }
+      .trust-bar-inner       { flex-direction:column; }
+      .trust-item            { border-right:none; border-bottom:1px solid var(--border); }
+      .trust-item:last-child { border-bottom:none; }
+      .urgency-inner         { flex-direction:column; text-align:center; }
+      .urgency-slots         { justify-content:center; }
+      .lb-prev               { left:-8px; }
+      .lb-next               { right:-8px; }
+      #sticky-cta            { bottom:16px; right:16px; }
+    }
+    @media (max-width:480px) {
+      .projects-grid         { grid-template-columns:1fr; }
+      .stats-row             { grid-template-columns:1fr 1fr; }
+      .google-badge-row      { flex-direction:column; text-align:center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ STICKY FLOATING CTA ══ -->
+<div id="sticky-cta">
+  <div class="sticky-cta-pill">
+    <i data-lucide="clock" style="width:13px;height:13px;color:var(--blue-light)"></i>
+    Free quotes — usually within <strong>24 hrs</strong>
+  </div>
+  <a href="https://wa.me/447767703323" target="_blank" rel="noopener" class="sticky-wa" aria-label="WhatsApp us">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<!-- ══ NAV ══ -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">E</div>
+    <div>
+      <div class="nav-logo-name">Empire Builders</div>
+      <div class="nav-logo-sub">Birmingham · Est. 2010</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta-link">Free Quote</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close">✕</button>
+  <a href="#about"        onclick="closeMobile()">About</a>
+  <a href="#projects"     onclick="closeMobile()">Projects</a>
+  <a href="#services"     onclick="closeMobile()">Services</a>
+  <a href="#testimonials" onclick="closeMobile()">Reviews</a>
+  <a href="#contact"      onclick="closeMobile()">Free Quote</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-mesh"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-deco">E</div>
+
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span class="hero-eyebrow-text">Sutton Coldfield · Birmingham · West Midlands</span>
+    </div>
+    <h1 class="hero-headline">
+      Transforming<br>Houses into<br><em>Masterpieces.</em>
+    </h1>
+    <p class="hero-sub">
+      5-star rated home extensions, bespoke kitchens, and luxury bathroom renovations. Personal project management from Antony — from first call to final reveal.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">
+        Book a Free Consultation
+        <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+      </a>
+      <a href="tel:+447767703323" class="btn btn-ghost">
+        <i data-lucide="phone" style="width:15px;height:15px;"></i>
+        07767 703323
+        <i data-lucide="arrow-right" style="width:13px;height:13px;"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-visual">
+      <div class="hero-visual-inner"></div>
+    </div>
+    <div class="hero-badge">
+      <div class="hero-badge-num">★ 5.0</div>
+      <div class="hero-badge-label">Google<br>Rated</div>
+    </div>
+    <div class="hero-stats-panel">
+      <div class="hero-stat">
+        <div class="hero-stat-num">500+</div>
+        <div class="hero-stat-label">Projects</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">15+</div>
+        <div class="hero-stat-label">Years</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">100%</div>
+        <div class="hero-stat-label">Recommended</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-text">Scroll</span>
+  </div>
+</section>
+
+<!-- ══ TICKER ══ -->
+<div class="ticker-outer" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="ticker-item"><span class="ticker-dot"></span>Single Storey Extensions</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Two Storey Conversions</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Bespoke Kitchens</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Luxury Bathrooms</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Full Home Renovations</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Sutton Coldfield</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Birmingham</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>West Midlands</div>
+    <!-- duplicate for seamless loop -->
+    <div class="ticker-item"><span class="ticker-dot"></span>Single Storey Extensions</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Two Storey Conversions</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Bespoke Kitchens</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Luxury Bathrooms</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Full Home Renovations</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Sutton Coldfield</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Birmingham</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>West Midlands</div>
+  </div>
+</div>
+
+<!-- ══ TRUST BAR ══ -->
+<div id="trust-bar">
+  <div class="trust-bar-inner container">
+    <div class="trust-item">
+      <div class="trust-item-icon"><i data-lucide="star" style="width:20px;height:20px;"></i></div>
+      <div class="trust-item-label">
+        <div class="trust-stars"><span>★★★★★</span></div>
+        <strong>5.0 Google Rating</strong>
+        17 verified reviews
+      </div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-item-icon"><i data-lucide="shield-check" style="width:20px;height:20px;"></i></div>
+      <div class="trust-item-label">
+        <strong>Fully Insured</strong>
+        Public liability covered
+      </div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-item-icon"><i data-lucide="calendar-check" style="width:20px;height:20px;"></i></div>
+      <div class="trust-item-label">
+        <strong>500+ Projects</strong>
+        Across the West Midlands
+      </div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-item-icon"><i data-lucide="users" style="width:20px;height:20px;"></i></div>
+      <div class="trust-item-label">
+        <strong>Daily On-Site</strong>
+        Tradespeople every working day
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-left reveal">
+        <div class="eyebrow dark"><span>Our Story</span></div>
+        <h2 class="section-title dk">Built on <em>Trust</em>,<br>Delivered with Pride.</h2>
+        <p class="about-desc">
+          Empire Builders UK has been transforming homes across Sutton Coldfield and Birmingham for over a decade. Founded by Antony — a craftsman who believes every home deserves the very best — our team brings exceptional skill, honest pricing, and meticulous attention to detail to every project.
+        </p>
+        <p class="about-desc" style="margin-top:12px;">
+          We don't just build extensions and renovate kitchens. We understand that your home is your most important space. From the first consultation to the final reveal: one point of contact, daily updates, and absolutely no nasty surprises.
+        </p>
+        <div class="about-pillars">
+          <div class="about-pillar">
+            <div class="about-pillar-num">500+</div>
+            <div class="about-pillar-label">Projects completed</div>
+          </div>
+          <div class="about-pillar">
+            <div class="about-pillar-num">15+</div>
+            <div class="about-pillar-label">Years experience</div>
+          </div>
+          <div class="about-pillar">
+            <div class="about-pillar-num">100%</div>
+            <div class="about-pillar-label">Would recommend</div>
+          </div>
+        </div>
+        <div class="about-cta-strip">
+          <p>Ready to explore what's possible in your home? <strong>Get a free, no-obligation quote.</strong> Most enquiries are turned around within 24 hours.</p>
+          <a href="#contact" class="btn btn-primary" style="flex-shrink:0;font-size:0.64rem;padding:14px 28px;">
+            Get a Quote
+            <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="about-right reveal" style="transition-delay:0.2s;">
+        <div class="about-img-frame">
+          <img src="2025-07-12-2.jpg" alt="Empire Builders UK — luxury kitchen extension with island, Sutton Coldfield" loading="lazy" />
+          <div class="about-pull">
+            <p class="about-pull-quote">"Amazing attention to detail throughout the whole job — a pleasure from start to finish."</p>
+            <p class="about-pull-cite">— Karen, Sutton Coldfield · Google Review</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<section id="projects">
+  <div class="container">
+    <div class="projects-header reveal">
+      <div>
+        <div class="eyebrow"><span>Our Work</span></div>
+        <h2 class="section-title">Real Projects,<br><em>Real Results.</em></h2>
+      </div>
+      <p class="projects-intro">
+        Every photo below is a completed project by our team — no stock imagery, no render. Just real Birmingham and Sutton Coldfield homes transformed by Antony and the Empire Builders crew.
+      </p>
+    </div>
+
+    <div class="projects-grid reveal">
+      <div class="proj-card" onclick="openLightbox(0)" role="button" aria-label="View extension project">
+        <img src="2024-08-26.jpg" alt="Single storey extension with rendered exterior and bi-fold doors, Birmingham" loading="lazy" />
+        <div class="proj-card-zoom"><i data-lucide="zoom-in" style="width:16px;height:16px;"></i></div>
+        <div class="proj-card-info">
+          <div class="proj-card-label">Single Storey Extension</div>
+          <div class="proj-card-title">Rendered Flat-Roof with Bi-Fold Doors</div>
+        </div>
+      </div>
+      <div class="proj-card" onclick="openLightbox(1)" role="button" aria-label="View kitchen project">
+        <img src="2024-08-26-2.jpg" alt="Bespoke white gloss kitchen renovation, Birmingham" loading="lazy" />
+        <div class="proj-card-zoom"><i data-lucide="zoom-in" style="width:16px;height:16px;"></i></div>
+        <div class="proj-card-info">
+          <div class="proj-card-label">Kitchen Renovation</div>
+          <div class="proj-card-title">White Gloss Kitchen & Tiled Flooring</div>
+        </div>
+      </div>
+      <div class="proj-card" onclick="openLightbox(2)" role="button" aria-label="View two storey extension">
+        <img src="2024-08-26-3.jpg" alt="Two storey brick extension, Sutton Coldfield" loading="lazy" />
+        <div class="proj-card-zoom"><i data-lucide="zoom-in" style="width:16px;height:16px;"></i></div>
+        <div class="proj-card-info">
+          <div class="proj-card-label">Two Storey Conversion</div>
+          <div class="proj-card-title">Traditional Brick Extension, Sutton Coldfield</div>
+        </div>
+      </div>
+      <div class="proj-card" onclick="openLightbox(3)" role="button" aria-label="View extension build">
+        <img src="2025-07-12.jpg" alt="Two storey brick extension final finish, Birmingham" loading="lazy" />
+        <div class="proj-card-zoom"><i data-lucide="zoom-in" style="width:16px;height:16px;"></i></div>
+        <div class="proj-card-info">
+          <div class="proj-card-label">Extension Build</div>
+          <div class="proj-card-title">Full Brick Two-Storey, Birmingham</div>
+        </div>
+      </div>
+      <div class="proj-card" onclick="openLightbox(4)" role="button" aria-label="View luxury kitchen">
+        <img src="2025-07-12-2.jpg" alt="Luxury open plan kitchen with island, Velux roof lantern and Crittal doors, West Midlands" loading="lazy" />
+        <div class="proj-card-zoom"><i data-lucide="zoom-in" style="width:16px;height:16px;"></i></div>
+        <div class="proj-card-info">
+          <div class="proj-card-label">Open Plan Kitchen Extension</div>
+          <div class="proj-card-title">Shaker Island Kitchen with Roof Lantern</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-cta reveal">
+      <div class="projects-cta-text">
+        <strong>Want to see more?</strong>
+        <small>Follow @empirebuilders.uk on Instagram for ongoing project updates and more completed work.</small>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+        <a href="https://www.instagram.com/empirebuilders.uk" target="_blank" rel="noopener" class="btn btn-outline">
+          <i data-lucide="instagram" style="width:15px;height:15px;"></i>
+          View Gallery
+        </a>
+        <a href="#contact" class="btn btn-primary">
+          Start Your Project
+          <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Project image viewer">
+  <div class="lightbox-img-wrap">
+    <button class="lb-close" onclick="closeLightbox()" aria-label="Close">✕</button>
+    <button class="lb-prev" onclick="lbPrev()" aria-label="Previous"><i data-lucide="chevron-left" style="width:20px;height:20px;"></i></button>
+    <img id="lightbox-img" src="" alt="Project photo" />
+    <button class="lb-next" onclick="lbNext()" aria-label="Next"><i data-lucide="chevron-right" style="width:20px;height:20px;"></i></button>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+</div>
+
+<!-- ══ SERVICES ══ -->
+<section id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <div>
+        <div class="eyebrow"><span>What We Build</span></div>
+        <h2 class="section-title">Specialist Services,<br><em>Uncompromised</em> Quality.</h2>
+      </div>
+      <p class="services-intro">
+        Whether you're planning a ground-floor extension, a luxury kitchen remodel, or a complete bathroom transformation, Empire Builders delivers end-to-end project management with vetted local tradespeople on-site every single day — no gaps, no delays.
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-num">01</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="20" width="40" height="24" rx="2"/><path d="M4 20 L24 6 L44 20"/>
+            <rect x="18" y="30" width="12" height="14"/><line x1="18" y1="37" x2="30" y2="37"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Single Storey Extensions</h3>
+        <p class="service-desc">Gain the space your family needs without moving. Our single-storey extensions blend seamlessly with your existing home — matching brickwork, rooflines, and proportions to perfection.</p>
+        <ul class="service-features">
+          <li class="service-feature">Full planning permission guidance</li>
+          <li class="service-feature">Architect & structural engineer coordination</li>
+          <li class="service-feature">Matching materials sourced locally</li>
+          <li class="service-feature">Turnkey project management</li>
+        </ul>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.1s;">
+        <div class="service-num">02</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="8" width="36" height="32" rx="2"/><path d="M6 24 h36"/><path d="M24 8 v32"/>
+            <rect x="10" y="12" width="10" height="8" rx="1"/><rect x="28" y="12" width="10" height="8" rx="1"/>
+            <rect x="10" y="28" width="10" height="8" rx="1"/><rect x="28" y="28" width="10" height="8" rx="1"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Two Storey Conversions</h3>
+        <p class="service-desc">Double your living space with a two-storey extension that adds real value and room to grow. We manage every phase from foundations to finishing — tradespeople on-site every working day.</p>
+        <ul class="service-features">
+          <li class="service-feature">Party wall agreements handled</li>
+          <li class="service-feature">Structural calculations included</li>
+          <li class="service-feature">Lantern & feature window options</li>
+          <li class="service-feature">Loft conversion add-ons available</li>
+        </ul>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.15s;">
+        <div class="service-num">03</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="16" width="40" height="28" rx="2"/>
+            <path d="M12 16 v-6 a4 4 0 0 1 4-4 h16 a4 4 0 0 1 4 4 v6"/>
+            <line x1="4" y1="28" x2="44" y2="28"/>
+            <rect x="10" y="32" width="8" height="8" rx="1"/><rect x="22" y="32" width="8" height="8" rx="1"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Bespoke Kitchens</h3>
+        <p class="service-desc">The kitchen is the heart of your home — we treat it that way. From knocking through walls to installing statement islands and underfloor heating, we create spaces you'll love for decades.</p>
+        <ul class="service-features">
+          <li class="service-feature">Wall removal & RSJ installation</li>
+          <li class="service-feature">Roof lantern & bi-fold door options</li>
+          <li class="service-feature">Bespoke cabinetry & fitting</li>
+          <li class="service-feature">Tiling, electrics & plumbing</li>
+        </ul>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.2s;">
+        <div class="service-num">04</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="24" cy="30" rx="16" ry="10"/>
+            <path d="M8 30 v6 a16 10 0 0 0 32 0 v-6"/>
+            <path d="M18 14 a6 8 0 0 1 12 0"/>
+            <line x1="24" y1="14" x2="24" y2="20"/>
+            <circle cx="34" cy="18" r="3"/>
+            <line x1="34" y1="21" x2="34" y2="30"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Luxury Bathrooms</h3>
+        <p class="service-desc">Transform your bathroom into a personal sanctuary. Walk-in rainfall showers, freestanding baths, floor-to-ceiling stone tiling — Kev's exceptional tiling and our expert team will exceed expectations.</p>
+        <ul class="service-features">
+          <li class="service-feature">Walk-in shower & wet room design</li>
+          <li class="service-feature">Expert tiling — large format & mosaic</li>
+          <li class="service-feature">Underfloor heating installation</li>
+          <li class="service-feature">Full strip-out & replumb</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESS ══ -->
+<section id="process">
+  <div class="container">
+    <div class="process-inner">
+      <div class="reveal">
+        <div class="eyebrow"><span>How It Works</span></div>
+        <h2 class="section-title">A Process as<br>Refined as<br>the <em>Result.</em></h2>
+        <p style="margin-top:24px;font-size:0.9rem;font-weight:300;line-height:1.85;color:var(--text-muted);">
+          From your first call to walking through your transformed home, every step is transparent, stress-free, and personally overseen by Antony.
+        </p>
+      </div>
+      <div class="process-steps reveal" style="transition-delay:0.2s;">
+        <div class="process-step">
+          <div class="process-step-num">1</div>
+          <div>
+            <h3 class="process-step-title">Free Consultation</h3>
+            <p class="process-step-desc">We visit your home, listen carefully to your vision, and assess the space. No pressure, no obligation — just honest expert advice on what's possible and what it will cost.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">2</div>
+          <div>
+            <h3 class="process-step-title">Design & Planning</h3>
+            <p class="process-step-desc">We work with architects and structural engineers to bring your plans to life. Planning applications, building regulations, and structural calculations — all handled on your behalf.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">3</div>
+          <div>
+            <h3 class="process-step-title">The Build</h3>
+            <p class="process-step-desc">Work begins on time and continues every day until completion. Antony personally oversees each phase, coordinating specialist trades — no gaps, no delays, no surprises. Ever.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">4</div>
+          <div>
+            <h3 class="process-step-title">Finishing & Handover</h3>
+            <p class="process-step-desc">Every detail is inspected before we hand over the keys. We only call the job done when you're completely satisfied — and we remain available long after completion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS — Real Google Reviews ══ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testimonials-header reveal">
+      <div class="eyebrow dark"><span>Verified Google Reviews</span></div>
+      <h2 class="section-title dk">What Real Clients<br>Say About <em>Empire Builders.</em></h2>
+    </div>
+
+    <div class="stats-row reveal">
+      <div class="stat-box">
+        <div class="stat-box-num" data-target="500" data-suffix="+">500+</div>
+        <div class="stat-box-label">Projects Delivered</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box-num">★ 5.0</div>
+        <div class="stat-box-label">Google Rating</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box-num" data-target="17" data-suffix="">17</div>
+        <div class="stat-box-label">Google Reviews</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box-num" data-target="100" data-suffix="%">100%</div>
+        <div class="stat-box-label">Would Recommend</div>
+      </div>
+    </div>
+
+    <!-- Google badge -->
+    <div class="google-badge-row reveal">
+      <div class="google-badge-logo">
+        <div class="g-letter">G</div>
+      </div>
+      <div class="google-badge-divider"></div>
+      <div class="google-badge-info">
+        <div class="google-badge-rating">
+          5.0 <span class="stars">★★★★★</span>
+        </div>
+        <div class="google-badge-count">Based on 17 Google reviews</div>
+      </div>
+      <div class="google-badge-divider"></div>
+      <a href="https://www.google.com/maps/search/empire+builders+uk+sutton+coldfield" target="_blank" rel="noopener" class="google-badge-cta">
+        Read on Google →
+      </a>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-google-icon">G</div>
+        </div>
+        <p class="testimonial-text">"Very Professional, Reliable and efficient in construction. Matched existing materials beautifully. Worked well with architects, and came up with a couple of wow factor suggestions of their own, regarding windows and lighting — really helpful and great to have on site. Great job and great price."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">P</div>
+          <div>
+            <div class="testimonial-name">Phil</div>
+            <div class="testimonial-location">Single Storey Extension · Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" style="transition-delay:0.1s;">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-google-icon">G</div>
+        </div>
+        <p class="testimonial-text">"Just wow… what an amazing bunch of guys. We've just had them do our 4th bedroom. Antony and his team have all been outstanding from start to finish — amazing attention to detail throughout the whole job. This extension has been a pleasure. I would 100% recommend."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">K</div>
+          <div>
+            <div class="testimonial-name">Karen</div>
+            <div class="testimonial-location">Bedroom Extension · Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" style="transition-delay:0.2s;">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-google-icon">G</div>
+        </div>
+        <p class="testimonial-text">"Antony was outstanding from the outset. Work started on time and there were tradesmen at my house each day. He provides you with the confidence the work will be completed to the highest standard — you get helpful hints and advice on layout and design too. Highly recommended."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">J</div>
+          <div>
+            <div class="testimonial-name">James</div>
+            <div class="testimonial-location">Full Home Renovation · Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-google-icon">G</div>
+        </div>
+        <p class="testimonial-text">"Excellent team — cannot thank these guys enough. Fantastic from start to finish. Had to adapt to many obstacles put their way but very professional and dealt with each one with ease. Highly recommended for all aspects of building work. Quality service."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">L</div>
+          <div>
+            <div class="testimonial-name">Lee</div>
+            <div class="testimonial-location">Extension & Renovation · Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" style="transition-delay:0.1s;">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-google-icon">G</div>
+        </div>
+        <p class="testimonial-text">"Empire builders renovated the bathroom from start to completion. Ant and crew were very professional — gave great knowledge and advice about what would work and what wouldn't. Ant really cares about his work, a rare commodity these days. Kev's tiling was some of the best I've seen. Will be in touch for further work."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Mark</div>
+            <div class="testimonial-location">Bathroom Renovation · Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" style="transition-delay:0.2s;">
+        <div class="testimonial-card-top">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-google-icon">G</div>
+        </div>
+        <p class="testimonial-text">"I used Empire Builders for my kitchen extension — removal of an internal wall, installing a roof light — plus a full bathroom renovation. Antony and the tradesmen worked professionally, cleanly and efficiently. Not a single day when nobody was on-site. More than happy with the result and would not hesitate to recommend."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Sandy</div>
+            <div class="testimonial-location">Kitchen Extension & Bathroom · Google Review</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:48px;" class="reveal">
+      <a href="https://www.google.com/maps/search/empire+builders+uk+sutton+coldfield" target="_blank" rel="noopener" class="btn btn-outline" style="color:var(--blue);border-color:rgba(37,99,235,0.35);">
+        <div class="g-letter" style="width:22px;height:22px;font-size:0.6rem;">G</div>
+        See All 17 Reviews on Google
+        <i data-lucide="external-link" style="width:14px;height:14px;"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ URGENCY BAND ══ -->
+<div id="urgency-band">
+  <div class="container urgency-inner">
+    <div class="urgency-text">
+      <div class="urgency-label">Limited Availability</div>
+      <div class="urgency-headline">Spring consultation slots<br><em>filling up fast.</em></div>
+      <div class="urgency-sub">We only take on a limited number of projects at a time to maintain our quality standard.</div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <div class="urgency-slots">
+        <div class="slot-dot slot-taken"></div>
+        <div class="slot-dot slot-taken"></div>
+        <div class="slot-dot slot-taken"></div>
+        <div class="slot-dot slot-available"></div>
+        <div class="slot-dot slot-available"></div>
+        <div class="urgency-slot-text">2 slots remaining this month</div>
+      </div>
+      <a href="#contact" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:#fff;padding:16px 36px;">
+        Secure Your Free Quote
+        <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CONTACT / FORM ══ -->
+<section id="contact">
+  <div class="contact-grid-bg"></div>
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <div class="eyebrow"><span>Let's Build Together</span></div>
+        <h2 class="section-title">Ready to <em>Transform</em><br>Your Home?</h2>
+        <p class="contact-sub">
+          Call us today for a free, no-obligation consultation. We cover Sutton Coldfield, Birmingham, and the wider West Midlands. Your dream home is closer than you think.
+        </p>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i data-lucide="phone" style="width:16px;height:16px;"></i></div>
+            <div>
+              <div class="contact-detail-label">Mobile</div>
+              <div class="contact-detail-value"><a href="tel:+447767703323">07767 703323</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i data-lucide="mail" style="width:16px;height:16px;"></i></div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value"><a href="mailto:empirebuilders@icloud.com">empirebuilders@icloud.com</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i data-lucide="map-pin" style="width:16px;height:16px;"></i></div>
+            <div>
+              <div class="contact-detail-label">Coverage Area</div>
+              <div class="contact-detail-value">Sutton Coldfield, Birmingham &amp; West Midlands</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i data-lucide="instagram" style="width:16px;height:16px;"></i></div>
+            <div>
+              <div class="contact-detail-label">Instagram</div>
+              <div class="contact-detail-value"><a href="https://www.instagram.com/empirebuilders.uk" target="_blank" rel="noopener">@empirebuilders.uk</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-guarantees">
+          <div class="contact-guarantees-title">Our Promise to You</div>
+          <div class="guarantee-item">
+            <div class="guarantee-icon"><i data-lucide="check-circle-2" style="width:15px;height:15px;"></i></div>
+            <div class="guarantee-text"><strong>Honest, fixed pricing</strong> — no hidden extras or nasty surprises</div>
+          </div>
+          <div class="guarantee-item">
+            <div class="guarantee-icon"><i data-lucide="check-circle-2" style="width:15px;height:15px;"></i></div>
+            <div class="guarantee-text"><strong>Daily on-site presence</strong> — tradespeople working every working day</div>
+          </div>
+          <div class="guarantee-item">
+            <div class="guarantee-icon"><i data-lucide="check-circle-2" style="width:15px;height:15px;"></i></div>
+            <div class="guarantee-text"><strong>One point of contact</strong> — Antony personally manages your project</div>
+          </div>
+          <div class="guarantee-item">
+            <div class="guarantee-icon"><i data-lucide="check-circle-2" style="width:15px;height:15px;"></i></div>
+            <div class="guarantee-text"><strong>Fully insured</strong> — public liability and professional indemnity</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal" style="transition-delay:0.2s;">
+        <div class="form-title">Get Your Free Quote</div>
+        <div class="form-subtitle">Fill in the form and we'll open a WhatsApp chat — quick and convenient.</div>
+        <form id="enquiryForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" placeholder="john@email.co.uk" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="07700 900000" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service">
+              <option value="">Select a service…</option>
+              <option>Single Storey Extension</option>
+              <option>Two Storey Conversion</option>
+              <option>Kitchen Renovation</option>
+              <option>Bathroom Renovation</option>
+              <option>Full Home Renovation</option>
+              <option>Other / Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Project *</label>
+            <textarea id="message" placeholder="Describe what you're looking to achieve, your rough timeline, and any specific requirements…" required></textarea>
+          </div>
+          <div class="form-consent">
+            <input type="checkbox" id="consent" required />
+            <label for="consent" style="text-transform:none;letter-spacing:0;font-size:0.73rem;color:var(--text-muted);font-weight:300;">
+              I agree to my details being used to respond to this enquiry in accordance with the <a onclick="openModal('privacy');return false;">Privacy Policy</a>. I confirm I'm happy to be contacted via WhatsApp or email.
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+            Send Enquiry via WhatsApp
+          </button>
+          <div class="form-wa-note">
+            <i data-lucide="check-circle-2" class="wa-green" style="width:14px;height:14px;"></i>
+            Opens WhatsApp with your details pre-filled — usually replied to within 2 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand-name">Empire Builders UK</div>
+        <div class="footer-brand-tag">Building Excellence Since 2010</div>
+        <p class="footer-brand-desc">Premier home renovations, extensions, and luxury bathroom and kitchen transformations across Sutton Coldfield, Birmingham and the West Midlands. Fully insured. 5-star Google rated.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/empirebuilders.uk" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Instagram">
+            <i data-lucide="instagram" style="width:14px;height:14px;"></i>
+          </a>
+          <a href="https://www.facebook.com/empirebuilders.uk" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Facebook">
+            <i data-lucide="facebook" style="width:14px;height:14px;"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="#services">Single Storey Extensions</a></li>
+          <li><a href="#services">Two Storey Conversions</a></li>
+          <li><a href="#services">Kitchen Renovations</a></li>
+          <li><a href="#services">Bathroom Transformations</a></li>
+          <li><a href="#services">Full Home Renovations</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#projects">Our Projects</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#testimonials">Client Reviews</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <ul class="footer-links">
+          <li><a href="tel:+447767703323">07767 703323</a></li>
+          <li><a href="mailto:empirebuilders@icloud.com">empirebuilders@icloud.com</a></li>
+          <li><a href="https://www.instagram.com/empirebuilders.uk" target="_blank" rel="noopener">@empirebuilders.uk</a></li>
+          <li style="color:rgba(232,240,254,0.22);font-size:0.82rem;font-weight:300;margin-top:6px;line-height:1.7;">Sutton Coldfield<br>Birmingham<br>West Midlands</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Empire Builders UK. All rights reserved. Sole Trader registered in England &amp; Wales.</p>
+      <div class="footer-legal">
+        <a onclick="openModal('privacy')">Privacy Policy</a>
+        <a onclick="openModal('cookies')">Cookie Policy</a>
+        <a onclick="openModal('terms')">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ COOKIE BANNER ══ -->
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+  <p class="cookie-text">
+    We use essential and analytics cookies to improve your experience and understand how our site is used. By clicking "Accept All" you consent to our use of cookies as described in our <a onclick="openModal('cookies');return false;">Cookie Policy</a> and <a onclick="openModal('privacy');return false;">Privacy Policy</a>, in accordance with UK-GDPR and PECR.
+  </p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-reject" onclick="rejectCookies()">Decline</button>
+    <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Accept All</button>
+  </div>
+</div>
+
+<!-- ══ LEGAL MODAL ══ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="modalContent" role="dialog" aria-modal="true">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<!-- ══ JAVASCRIPT ══ -->
+<script>
+  lucide.createIcons();
+
+  // ── Navbar scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    document.getElementById('sticky-cta').classList.toggle('show', window.scrollY > 400);
+  });
+
+  // ── Mobile menu
+  const hamburger  = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.style.display = 'flex';
+    requestAnimationFrame(() => mobileMenu.classList.add('open'));
+  });
+  function closeMobile() {
+    mobileMenu.classList.remove('open');
+    setTimeout(() => mobileMenu.style.display = 'none', 310);
+  }
+  document.getElementById('mobileClose').addEventListener('click', closeMobile);
+
+  // ── Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 }).observe ? (() => {
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    revealEls.forEach(el => obs.observe(el));
+  })() : revealEls.forEach(el => el.classList.add('visible'));
+
+  // ── Count animation
+  function animateCount(el, target, suffix) {
+    const dur = 1700, start = performance.now();
+    const step = now => {
+      const p = Math.min((now - start) / dur, 1),
+            e = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(e * target) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+  const statsRow = document.querySelector('.stats-row');
+  if (statsRow) {
+    new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('[data-target]').forEach(el =>
+            animateCount(el, +el.dataset.target, el.dataset.suffix || '')
+          );
+        }
+      });
+    }, { threshold: 0.4 }).observe(statsRow);
+  }
+
+  // ── Lightbox
+  const lbImages = [
+    { src:'2024-08-26.jpg',   caption:'Single Storey Extension — Rendered flat-roof with bi-fold doors, Birmingham' },
+    { src:'2024-08-26-2.jpg', caption:'Kitchen Renovation — White gloss kitchen with grey tiled flooring, Birmingham' },
+    { src:'2024-08-26-3.jpg', caption:'Two Storey Conversion — Traditional brick build, Sutton Coldfield' },
+    { src:'2025-07-12.jpg',   caption:'Extension Build — Full brick two-storey, Birmingham' },
+    { src:'2025-07-12-2.jpg', caption:'Open Plan Kitchen Extension — Shaker island kitchen with roof lantern, West Midlands' },
+  ];
+  let lbIdx = 0;
+  const lightbox    = document.getElementById('lightbox');
+  const lbImg       = document.getElementById('lightbox-img');
+  const lbCaption   = document.getElementById('lightbox-caption');
+
+  function openLightbox(i) {
+    lbIdx = i; updateLightbox();
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function updateLightbox() {
+    const d = lbImages[lbIdx];
+    lbImg.src = d.src; lbImg.alt = d.caption; lbCaption.textContent = d.caption;
+  }
+  function lbPrev() { lbIdx = (lbIdx - 1 + lbImages.length) % lbImages.length; updateLightbox(); }
+  function lbNext() { lbIdx = (lbIdx + 1) % lbImages.length; updateLightbox(); }
+
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', e => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'ArrowLeft')  lbPrev();
+    if (e.key === 'ArrowRight') lbNext();
+    if (e.key === 'Escape')     closeLightbox();
+  });
+
+  // ── WhatsApp form
+  document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const fname   = document.getElementById('fname').value.trim();
+    const lname   = document.getElementById('lname').value.trim();
+    const email   = document.getElementById('email').value.trim();
+    const phone   = document.getElementById('phone').value.trim();
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value.trim();
+    const consent = document.getElementById('consent').checked;
+
+    if (!fname || !lname || !email || !message) {
+      alert('Please fill in your name, email and project description before sending.');
+      return;
+    }
+    if (!consent) { alert('Please agree to the privacy policy to continue.'); return; }
+
+    const lines = [
+      '*New Enquiry — empirebuilders.uk*', '',
+      `*Name:* ${fname} ${lname}`,
+      email   ? `*Email:* ${email}` : null,
+      phone   ? `*Phone:* ${phone}` : null,
+      service ? `*Service:* ${service}` : null,
+      '', '*Project Details:*', message
+    ].filter(Boolean).join('\n');
+
+    window.open(`https://wa.me/447767703323?text=${encodeURIComponent(lines)}`, '_blank');
+  });
+
+  // ── Cookie banner
+  const banner = document.getElementById('cookie-banner');
+  if (!localStorage.getItem('eb_consent')) {
+    setTimeout(() => banner.classList.add('show'), 2000);
+  }
+  function acceptCookies() { localStorage.setItem('eb_consent','accepted'); banner.classList.remove('show'); }
+  function rejectCookies() { localStorage.setItem('eb_consent','rejected'); banner.classList.remove('show'); }
+
+  // ── Modals
+  const privacyContent = `
+    <h2>Privacy Policy</h2>
+    <p class="modal-date">Last updated: April 2025</p>
+    <p>Empire Builders UK ("we", "us", "our") is committed to protecting your personal data in accordance with the <strong>UK General Data Protection Regulation (UK GDPR)</strong>, the <strong>Data Protection Act 2018</strong>, and all applicable UK data protection legislation.</p>
+    <h3>1. Data Controller</h3>
+    <p>Empire Builders UK is the data controller for personal data collected through this website. Contact: <strong>07767 703323</strong> | empirebuilders@icloud.com | Sutton Coldfield, Birmingham, West Midlands.</p>
+    <h3>2. What Personal Data We Collect</h3>
+    <ul>
+      <li>Identity data: name</li>
+      <li>Contact data: email address, phone number, postal address</li>
+      <li>Project data: details of your property and renovation requirements</li>
+      <li>Technical data: IP address, browser type, pages visited (via analytics cookies, if accepted)</li>
+      <li>Communications data: records of correspondence with us via email, phone or WhatsApp</li>
+    </ul>
+    <h3>3. How We Collect Your Data</h3>
+    <p>We collect data directly from you when you: complete our enquiry form, contact us by phone, email or WhatsApp, or visit our website (technical data only, subject to your cookie consent).</p>
+    <h3>4. Lawful Basis for Processing</h3>
+    <ul>
+      <li><strong>Consent</strong> (Article 6(1)(a)): for analytics cookies and marketing communications</li>
+      <li><strong>Contract</strong> (Article 6(1)(b)): to respond to your enquiry and deliver our services</li>
+      <li><strong>Legitimate Interests</strong> (Article 6(1)(f)): to improve our website and services, prevent fraud</li>
+      <li><strong>Legal Obligation</strong> (Article 6(1)(c)): for accounting, tax, and statutory compliance purposes</li>
+    </ul>
+    <h3>5. How We Use Your Data</h3>
+    <ul>
+      <li>Responding to enquiries and providing quotations</li>
+      <li>Managing your project and communicating about its progress</li>
+      <li>Fulfilling our contractual and legal obligations</li>
+      <li>Improving our website and services (analytics, subject to consent)</li>
+    </ul>
+    <h3>6. Data Retention</h3>
+    <p>Customer project records: retained for <strong>7 years</strong> after project completion (for HMRC/legal compliance). Enquiry data from prospects who do not proceed: retained for up to <strong>24 months</strong>. Marketing preferences: until consent is withdrawn.</p>
+    <h3>7. Data Sharing</h3>
+    <p>We do not sell, rent, or trade your personal data. We may share limited data with:</p>
+    <ul>
+      <li>Trusted subcontractors and tradespeople, solely for delivering your project</li>
+      <li>Professional advisers (accountants, solicitors) under strict confidentiality</li>
+      <li>Regulatory authorities where legally required to do so</li>
+    </ul>
+    <h3>8. International Transfers</h3>
+    <p>We do not transfer your data outside the UK or EEA. Where third-party tools (e.g. WhatsApp, Instagram) are used, their own privacy policies and transfer mechanisms apply.</p>
+    <h3>9. Your Rights Under UK GDPR</h3>
+    <p>You have the right to: <strong>access</strong> your data; <strong>rectify</strong> inaccurate data; <strong>erase</strong> data (in certain circumstances); <strong>restrict</strong> processing; <strong>data portability</strong>; <strong>object</strong> to processing; and <strong>withdraw consent</strong> at any time (without affecting prior lawful processing). To exercise any right, contact us at empirebuilders@icloud.com. We will respond within <strong>one calendar month</strong>.</p>
+    <h3>10. Complaints</h3>
+    <p>If you believe your data rights have been infringed, you have the right to lodge a complaint with the <strong>Information Commissioner's Office (ICO)</strong>: <a href="https://ico.org.uk" target="_blank">ico.org.uk</a> | 0303 123 1113 | Wycliffe House, Water Lane, Wilmslow SK9 5AF.</p>
+    <h3>11. Changes to This Policy</h3>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We recommend reviewing this policy periodically.</p>
+  `;
+
+  const cookieContent = `
+    <h2>Cookie Policy</h2>
+    <p class="modal-date">Last updated: April 2025</p>
+    <p>This Cookie Policy explains how Empire Builders UK uses cookies and similar technologies on our website, in compliance with the <strong>Privacy and Electronic Communications Regulations 2003 (PECR)</strong> as amended, and the <strong>UK GDPR</strong>. We only use cookies where we have a lawful basis to do so.</p>
+    <h3>What Are Cookies?</h3>
+    <p>Cookies are small text files placed on your device when you visit a website. They allow the website to recognise your browser and remember certain information about your visit.</p>
+    <h3>Cookies We Use</h3>
+    <ul>
+      <li><strong>Strictly Necessary Cookies</strong> — These are essential for the website to function and cannot be disabled. They include: storing your cookie consent preference (<code>eb_consent</code>). No consent is required for these cookies under PECR Regulation 6(1).</li>
+      <li><strong>Analytics Cookies</strong> — <em>Only set with your consent.</em> These help us understand how visitors interact with our website (pages visited, time spent, referral source). Data is anonymised and aggregated. We may use Google Analytics or similar tools for this purpose.</li>
+      <li><strong>Functional Cookies</strong> — <em>Only set with your consent.</em> These remember your preferences to improve your browsing experience.</li>
+    </ul>
+    <p>We do <strong>not</strong> use advertising, tracking, or profiling cookies, nor do we permit third-party marketing cookies on this site.</p>
+    <h3>How to Manage Cookies</h3>
+    <p>You can accept or decline non-essential cookies using our consent banner when you first visit the site. You may also withdraw or change your consent at any time by clearing your browser cookies and revisiting the site. Most browsers allow you to control cookies through their settings — refer to your browser's help section for guidance. Note that disabling cookies may affect certain website features.</p>
+    <h3>Third-Party Services</h3>
+    <p>Where we link to or embed third-party services (e.g. WhatsApp, Instagram, Google Maps), those providers may set their own cookies subject to their privacy policies. We have no control over these cookies.</p>
+    <h3>Consent</h3>
+    <p>By clicking "Accept All" on our cookie banner, you consent to the use of analytics and functional cookies as described above. This consent is freely given, specific, informed and unambiguous, as required by PECR and UK GDPR.</p>
+    <h3>Contact</h3>
+    <p>Questions about cookies? Contact us: empirebuilders@icloud.com | 07767 703323.</p>
+  `;
+
+  const termsContent = `
+    <h2>Terms of Use</h2>
+    <p class="modal-date">Last updated: April 2025</p>
+    <p>These Terms of Use govern your access to and use of the Empire Builders UK website at empirebuilders.uk ("the Website"). By accessing the Website, you agree to these terms in full. If you do not accept these terms, please do not use this Website.</p>
+    <h3>1. About Us</h3>
+    <p>Empire Builders UK is a sole trader business providing home renovation and extension services, based in Sutton Coldfield, Birmingham, operating in England and Wales. Contact: empirebuilders@icloud.com | 07767 703323.</p>
+    <h3>2. Use of the Website</h3>
+    <p>You may use this Website for lawful purposes only and in a manner consistent with all applicable laws and regulations. You must not: use the Website in any way that is fraudulent, harmful, or unlawful; attempt to gain unauthorised access to any part of the Website; transmit unsolicited commercial communications.</p>
+    <h3>3. Intellectual Property</h3>
+    <p>All content on this Website — including text, photographs, graphics, logos, and design — is the property of Empire Builders UK and is protected by UK copyright law. You may not reproduce, distribute, or create derivative works from any content without our prior written consent.</p>
+    <h3>4. Accuracy of Information</h3>
+    <p>We take care to ensure information on this Website is accurate and up to date, but we make no warranty as to its completeness, accuracy, or fitness for any particular purpose. All quotations, specifications, and project details are subject to a formal written agreement and site survey.</p>
+    <h3>5. Third-Party Links</h3>
+    <p>This Website may contain links to third-party websites (e.g. Instagram, Facebook, Google). We have no control over the content or privacy practices of those sites and accept no responsibility for them.</p>
+    <h3>6. Limitation of Liability</h3>
+    <p>To the fullest extent permitted by law, Empire Builders UK shall not be liable for any indirect, consequential, incidental, or special loss or damage arising from your use of this Website. Nothing in these terms excludes or limits our liability for death or personal injury caused by our negligence, or for fraud or fraudulent misrepresentation.</p>
+    <h3>7. Consumer Rights</h3>
+    <p>Nothing in these terms affects your statutory rights as a consumer under the <strong>Consumer Rights Act 2015</strong>, the <strong>Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013</strong>, or any other applicable UK consumer protection legislation.</p>
+    <h3>8. Changes to These Terms</h3>
+    <p>We reserve the right to update these Terms of Use at any time. Changes will be posted on this page with an updated date. Continued use of the Website after any changes constitutes your acceptance.</p>
+    <h3>9. Governing Law</h3>
+    <p>These Terms of Use are governed by the laws of England and Wales. Any dispute shall be subject to the non-exclusive jurisdiction of the courts of England and Wales.</p>
+  `;
+
+  const overlay   = document.getElementById('modalOverlay');
+  const modalBody = document.getElementById('modalBody');
+
+  function openModal(type) {
+    if      (type === 'privacy') modalBody.innerHTML = privacyContent;
+    else if (type === 'cookies') modalBody.innerHTML = cookieContent;
+    else if (type === 'terms')   modalBody.innerHTML = termsContent;
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
+  function closeModalOutside(e) { if (e.target === overlay) closeModal(); }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) closeModal(); });
+</script>
+</body>
+</html>
